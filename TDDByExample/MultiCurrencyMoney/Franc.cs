@@ -6,6 +6,10 @@
         {
 
         }
+        public Franc Times(int timesValue)
+        {
+            return new Franc(Amount * timesValue);
+        }
 
     }
 }

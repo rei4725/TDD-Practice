@@ -6,6 +6,9 @@
         {
             
         }
-
+        public Dollar Times(int timesValue)
+        {
+            return new Dollar(Amount * timesValue);
+        }
     }
 }

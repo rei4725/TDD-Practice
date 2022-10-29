@@ -2,21 +2,17 @@
 {
     public class Money
     {
-        private readonly int Amount;
+        public readonly int Amount;
         public Money(int amount)
         {
             Amount = amount;
         }
 
-        public Money Times(int timesValue)
-        {
-            return new Money(Amount * timesValue);
-        }
-
         public override bool Equals(object obj)
         {
-            var thatFranc = obj as Money;
-            return Amount.Equals(thatFranc?.Amount);
+            var thatMoney = obj as Money;
+            return Amount.Equals(thatMoney?.Amount) &&
+                MemberwiseClone().GetType().Equals(thatMoney.GetType());
         }
     }
 }
