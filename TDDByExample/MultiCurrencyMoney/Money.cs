@@ -13,12 +13,12 @@
 
         public static Money Dollar(int amount)
         {
-            return new Dollar(amount,CurrencyID.USD);
+            return new Money(amount,CurrencyID.USD);
         }
 
         public static Money Franc(int amount)
         {
-            return new Franc(amount,CurrencyID.CHF);
+            return new Money(amount,CurrencyID.CHF);
         }
 
         public string Currency()
