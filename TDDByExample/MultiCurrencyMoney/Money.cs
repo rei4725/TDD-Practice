@@ -1,13 +1,14 @@
 ﻿namespace MultiCurrencyMoney
 {
-    public abstract class Money
+    public class Money
     {
         public readonly int Amount;
         protected CurrencyID CurrencyID;
-        public abstract Money Times(int timesValue);
-        public Money(int amount)
+    
+        public Money(int amount, CurrencyID currencyID)
         {
             Amount = amount;
+            CurrencyID = currencyID;
         }
 
         public static Money Dollar(int amount)
@@ -25,11 +26,16 @@
             return CurrencyID.ToString();
         }
 
+        public Money Times(int timesValue)
+        {
+            return new Money(Amount * timesValue,CurrencyID);
+        }
+
         public override bool Equals(object obj)
         {
             var thatMoney = obj as Money;
             return Amount.Equals(thatMoney?.Amount) &&
-                MemberwiseClone().GetType().Equals(thatMoney.GetType());
+                CurrencyID.Equals(thatMoney.CurrencyID);
         }
     }
 }

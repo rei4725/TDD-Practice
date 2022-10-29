@@ -2,13 +2,9 @@
 {
     public class Franc : Money
     {
-        public Franc(int amount, CurrencyID CurrencyID) :base(amount)
-        {
+        public Franc(int amount, CurrencyID CurrencyID) :base(amount, CurrencyID)
+        {       
             this.CurrencyID = CurrencyID;
-        }
-        public override Money Times(int timesValue)
-        {
-            return Franc(Amount * timesValue);
         }
 
     }
