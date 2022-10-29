@@ -2,13 +2,13 @@
 {
     public class Dollar : Money
     {
-        public Dollar(int amount): base(amount)
+        public Dollar(int amount,CurrencyID CurrencyID): base(amount)
         {
-            CurrencyID = CurrencyID.USD;
+            this.CurrencyID = CurrencyID;
         }
         public override Money Times(int timesValue) 
         {
-            return new Dollar(Amount * timesValue);
+            return Dollar(Amount * timesValue);
         }
 
     }
