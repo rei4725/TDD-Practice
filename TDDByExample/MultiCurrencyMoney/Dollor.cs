@@ -10,7 +10,7 @@
 
         public void Times (int timesValue)
         {
-            Amount = 10;
+            Amount *= timesValue;
         }
     }
 }
