@@ -1,11 +1,22 @@
 ﻿namespace MultiCurrencyMoney
 {
-    public class Money
+    public abstract class Money
     {
         public readonly int Amount;
+        public abstract Money Times(int timesValue);
         public Money(int amount)
         {
             Amount = amount;
+        }
+
+        public static Money Dollar(int amount)
+        {
+            return new Dollar(amount);
+        }
+
+        public static Money Franc(int amount)
+        {
+            return new Franc(amount);
         }
 
         public override bool Equals(object obj)

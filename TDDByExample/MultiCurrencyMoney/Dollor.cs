@@ -6,7 +6,7 @@
         {
             
         }
-        public Dollar Times(int timesValue)
+        public override Money Times(int timesValue) 
         {
             return new Dollar(Amount * timesValue);
         }

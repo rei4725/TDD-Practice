@@ -6,7 +6,7 @@
         {
 
         }
-        public Franc Times(int timesValue)
+        public override Money Times(int timesValue)
         {
             return new Franc(Amount * timesValue);
         }
