@@ -10,5 +10,10 @@
         {
             return new Dollar(Amount * timesValue);
         }
+
+        public override string Currency()
+        {
+            return CurrencyID.USD.ToString();
+        }
     }
 }

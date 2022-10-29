@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="CurrencyID.cs" />
     <Compile Include="Franc.cs" />
     <Compile Include="Dollor.cs" />
     <Compile Include="Money.cs" />

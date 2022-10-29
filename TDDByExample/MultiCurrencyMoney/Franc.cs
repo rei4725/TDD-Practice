@@ -11,5 +11,9 @@
             return new Franc(Amount * timesValue);
         }
 
+        public override string Currency()
+        {
+            return CurrencyID.CHF.ToString();
+        }
     }
 }

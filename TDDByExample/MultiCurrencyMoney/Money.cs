@@ -4,6 +4,7 @@
     {
         public readonly int Amount;
         public abstract Money Times(int timesValue);
+        public abstract string Currency();
         public Money(int amount)
         {
             Amount = amount;
