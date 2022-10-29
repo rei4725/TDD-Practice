@@ -8,9 +8,9 @@
             Amount = amount;
         }
 
-        public void Times (int timesValue)
+        public Dollar Times (int timesValue)
         {
-            Amount *= timesValue;
+            return new Dollar(Amount * timesValue);
         }
     }
 }
