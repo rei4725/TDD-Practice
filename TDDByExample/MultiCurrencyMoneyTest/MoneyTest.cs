@@ -21,6 +21,8 @@ namespace MultiCurrencyMoneyTest
         public void TestEquality()
         {
             Assert.IsTrue(new Dollar(5).Equals(new Dollar(5)));
+            Assert.IsFalse(new Dollar(5).Equals(null));
+            Assert.IsFalse(new Dollar(6).Equals(new Dollar(5)));
         }
     }
 }
