@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MultiCurrencyMoney;
 using System;
 
 namespace MultiCurrencyMoneyTest
@@ -9,9 +10,9 @@ namespace MultiCurrencyMoneyTest
         [TestMethod]
         public void TestMultiplication()
         {
-            Dollor five = new Dollar(5);
+            Dollar five = new Dollar(5);
             five.Times(2);
-            Assert.AreEqual(10);
+            Assert.AreEqual(10,five.Amount);
         }
     }
 }
