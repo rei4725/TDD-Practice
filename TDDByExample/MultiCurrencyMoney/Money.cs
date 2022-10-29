@@ -2,7 +2,7 @@
 {
     public class Money
     {
-        protected readonly int Amount;
+        private readonly int Amount;
         public Money(int amount)
         {
             Amount = amount;
