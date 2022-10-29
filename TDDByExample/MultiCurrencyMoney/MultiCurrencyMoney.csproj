@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Franc.cs" />
     <Compile Include="Dollor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
