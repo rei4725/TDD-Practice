@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiCurrencyMoney", "MultiCurrencyMoney.csproj", "{4CD8AE2E-94A7-4825-A37A-5178CE577FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiCurrencyMoneyTest", "..\MultiCurrencyMoneyTest\MultiCurrencyMoneyTest.csproj", "{6CEC404A-1139-4F9F-8945-E9506F11B890}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CD8AE2E-94A7-4825-A37A-5178CE577FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD8AE2E-94A7-4825-A37A-5178CE577FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD8AE2E-94A7-4825-A37A-5178CE577FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD8AE2E-94A7-4825-A37A-5178CE577FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEC404A-1139-4F9F-8945-E9506F11B890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEC404A-1139-4F9F-8945-E9506F11B890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEC404A-1139-4F9F-8945-E9506F11B890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEC404A-1139-4F9F-8945-E9506F11B890}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22560905-A43B-4426-8074-96C9579E7A61}
+	EndGlobalSection
+EndGlobal
