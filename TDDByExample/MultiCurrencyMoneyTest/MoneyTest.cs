@@ -27,15 +27,18 @@ namespace MultiCurrencyMoneyTest
         [TestMethod]
         public void TestCurrency()
         {
-            Assert.AreEqual("USD", Money.Dollar(1).Currency());
-            Assert.AreEqual("CHF", Money.Franc(1).Currency());
+            Assert.AreEqual(CurrencyID.USD, Money.Dollar(1).Currency());
+            Assert.AreEqual(CurrencyID.CHF, Money.Franc(1).Currency());
         }
 
         [TestMethod]
         public void TestSimpleAddition()
         {
-            Money sum = Money.Dollar(5).Plus(Money.Dollar(5));
-            Assert.AreEqual(Money.Dollar(10), sum);
+            Money five = Money.Dollar(5);
+            Expression sum = five.Plus(five);
+            Bank bank = new Bank();
+            Money reduced = bank.Reduce(sum, CurrencyID.USD);
+            Assert.AreEqual(Money.Dollar(10), reduced);
         }
     }
 }

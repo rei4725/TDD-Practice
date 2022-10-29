@@ -1,6 +1,6 @@
 ﻿namespace MultiCurrencyMoney
 {
-    public class Money
+    public class Money : Expression
     {
         public readonly int Amount;
         protected CurrencyID CurrencyID;
@@ -21,12 +21,12 @@
             return new Money(amount,CurrencyID.CHF);
         }
 
-        public string Currency()
+        public CurrencyID Currency()
         {
-            return CurrencyID.ToString();
+            return CurrencyID;
         }
 
-        public Money Plus(Money addend)
+        public Expression Plus(Money addend)
         {
             return new Money(Amount + addend.Amount, CurrencyID);
         }

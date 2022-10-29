@@ -53,7 +53,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Bank.cs" />
     <Compile Include="CurrencyID.cs" />
+    <Compile Include="Expression.cs" />
     <Compile Include="Money.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
