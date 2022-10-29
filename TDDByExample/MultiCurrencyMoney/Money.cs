@@ -26,6 +26,11 @@
             return CurrencyID.ToString();
         }
 
+        public Money Plus(Money addend)
+        {
+            return new Money(Amount + addend.Amount, CurrencyID);
+        }
+
         public Money Times(int timesValue)
         {
             return new Money(Amount * timesValue,CurrencyID);
