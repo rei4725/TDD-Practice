@@ -1,6 +1,6 @@
 ﻿namespace MultiCurrencyMoney
 {
-    enum CurrencyID
+    public enum CurrencyID
     {
         USD,
         CHF

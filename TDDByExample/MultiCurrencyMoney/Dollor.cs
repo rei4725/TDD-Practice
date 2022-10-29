@@ -4,16 +4,12 @@
     {
         public Dollar(int amount): base(amount)
         {
-            
+            CurrencyID = CurrencyID.USD;
         }
         public override Money Times(int timesValue) 
         {
             return new Dollar(Amount * timesValue);
         }
 
-        public override string Currency()
-        {
-            return CurrencyID.USD.ToString();
-        }
     }
 }

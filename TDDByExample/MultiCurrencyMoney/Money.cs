@@ -3,8 +3,8 @@
     public abstract class Money
     {
         public readonly int Amount;
+        protected CurrencyID CurrencyID;
         public abstract Money Times(int timesValue);
-        public abstract string Currency();
         public Money(int amount)
         {
             Amount = amount;
@@ -18,6 +18,11 @@
         public static Money Franc(int amount)
         {
             return new Franc(amount);
+        }
+
+        public string Currency()
+        {
+            return CurrencyID.ToString();
         }
 
         public override bool Equals(object obj)
